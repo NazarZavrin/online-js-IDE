@@ -34,7 +34,6 @@ body {
   width: 100%;
   height: 100%;
   background-color: #c5c5c5;
-  border-radius: 10px;
 }
 
 .IDE-block > div {
@@ -43,7 +42,6 @@ body {
   height: 100%;
   position: absolute;
   top: 0; left: 0;
-  border-radius: inherit;
   font: 20px "Calibri", sans-serif;
   background-color: transparent;
   color: black;
@@ -51,6 +49,9 @@ body {
   &:last-of-type{
     color: transparent;
     caret-color: dodgerblue;
+  }
+  &:last-of-type::selection{
+    background-color: rgba(30, 144, 255, 0.5);// цвет выделенного (selected) текста
   }
 }
 
